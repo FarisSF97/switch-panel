@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge - panel switch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="container" id="container">
+      
+      <!-- left panel -->
+      <section class="panel panel-left">
+        <h1 id="welcome_text">Hello, Friend</h1>
+        <p id="welcome_desc">Silakan daftar untuk membuat akun Anda.</p>
+        <br>
+        <button class="btn" id="btn_register">Daftar</button>
+      </section>
+
+      <!-- right panel -->
+      <section class="panel panel-right">
+        <!-- login -->
+        <form class="login-form" action="javascript:void(0)">
+          <h2>Login</h2>
+          <br>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="nama@contoh.com"
+            required>
+
+          <label for="password">Kata Sandi</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="••••••••"
+            required>
+
+          <br><button type="submit" class="btn" id="btn_masuk">Masuk</button>
+        </form>
+
+        <!-- register -->
+        <form class="register-form" action="javascript:void(0)">
+          <h2>Register</h2>
+          <label for="username">Nama Lengkap</label>
+          <input id="username" type="text" placeholder="Nama Anda" required>
+
+          <label for="regEmail">Email</label>
+          <input
+            id="regEmail"
+            type="email"
+            placeholder="nama@contoh.com"
+            required>
+
+          <label for="regPassword">Kata Sandi</label>
+          <input
+            id="regPassword"
+            type="password"
+            placeholder="••••••••"
+            required>
+
+          <button type="submit" class="btn" id="btn_daftar">Daftar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- or you can use this script tag instead of using defer in the head -->
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
